@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad9f2a88-1c66-45f4-a406-59fb8590b313" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i9BgT0Km8PNSABuucSZIShtKyg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CartTests.checkoutButtonAvailable">
+    <configuration name="CartTests.checkoutButtonAvailable" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CartTests" />
+      <option name="METHOD_NAME" value="checkoutButtonAvailable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTests.continueShoppingButtonAvailable" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CartTests" />
+      <option name="METHOD_NAME" value="continueShoppingButtonAvailable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutTests.cancelButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckoutTests" />
+      <option name="METHOD_NAME" value="cancelButton" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.lockedCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="lockedCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automated_testing_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CartTests.checkoutButtonAvailable" />
+        <item itemvalue="TestNG.tests" />
+        <item itemvalue="TestNG.CartTests.continueShoppingButtonAvailable" />
+        <item itemvalue="TestNG.CheckoutTests.cancelButton" />
+        <item itemvalue="TestNG.LoginTests.lockedCredentials" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad9f2a88-1c66-45f4-a406-59fb8590b313" name="Default Changelist" comment="" />
+      <created>1601310038868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601310038868</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="578" y="271" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1601411075115">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="578" y="271" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1680.972@0.23.1680.972" timestamp="1601411075115" />
+    <state x="1794" y="60" width="1692" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601926279922">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state x="100" y="123" width="1480" height="772" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1680.972@0.23.1680.972" timestamp="1601396775790" />
+    <state x="1794" y="60" width="1692" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1601926279922" />
+    <state x="2435" y="366" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601996648502">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state x="2435" y="366" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1601996648502" />
+    <state x="2293" y="153" key="#tests" timestamp="1601928735523">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state x="2293" y="153" key="#tests/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1601928735523" />
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom" timestamp="1602638860925">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1602638860925" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915041" />
+    <state width="912" height="303" key="GridCell.Tab.0.bottom/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142130" />
+    <state width="1638" height="293" key="GridCell.Tab.0.center" timestamp="1602638860924">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1602638860924" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915040" />
+    <state width="912" height="303" key="GridCell.Tab.0.center/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142128" />
+    <state width="1638" height="293" key="GridCell.Tab.0.left" timestamp="1602638860923">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1602638860923" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915040" />
+    <state width="912" height="303" key="GridCell.Tab.0.left/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142127" />
+    <state width="1638" height="293" key="GridCell.Tab.0.right" timestamp="1602638860925">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1602638860925" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915041" />
+    <state width="912" height="303" key="GridCell.Tab.0.right/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142129" />
+    <state width="1878" height="323" key="GridCell.Tab.1.bottom" timestamp="1602014977460">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="323" key="GridCell.Tab.1.bottom/0.23.1680.972@0.23.1680.972" timestamp="1601506880700" />
+    <state width="1878" height="323" key="GridCell.Tab.1.bottom/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602014977460" />
+    <state width="1878" height="323" key="GridCell.Tab.1.center" timestamp="1602014977459">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="323" key="GridCell.Tab.1.center/0.23.1680.972@0.23.1680.972" timestamp="1601506880700" />
+    <state width="1878" height="323" key="GridCell.Tab.1.center/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602014977459" />
+    <state width="1878" height="323" key="GridCell.Tab.1.left" timestamp="1602014977459">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="323" key="GridCell.Tab.1.left/0.23.1680.972@0.23.1680.972" timestamp="1601506880700" />
+    <state width="1878" height="323" key="GridCell.Tab.1.left/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602014977459" />
+    <state width="1878" height="323" key="GridCell.Tab.1.right" timestamp="1602014977460">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="323" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1601506880700" />
+    <state width="1878" height="323" key="GridCell.Tab.1.right/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602014977460" />
+    <state x="498" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601498420272">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="498" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.972@0.23.1680.972" timestamp="1601498420272" />
+    <state x="2257" y="184" width="766" height="736" key="search.everywhere.popup" timestamp="1601996090681">
+      <screen x="1680" y="-49" width="1920" height="1057" />
+    </state>
+    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.972@0.23.1680.972" timestamp="1601913403485" />
+    <state x="2257" y="184" width="766" height="736" key="search.everywhere.popup/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1601996090681" />
+  </component>
+</project>
