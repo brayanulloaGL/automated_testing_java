@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -29,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -178,28 +182,28 @@
       <screen x="1680" y="-49" width="1920" height="1057" />
     </state>
     <state x="2293" y="153" key="#tests/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1601928735523" />
-    <state width="1638" height="293" key="GridCell.Tab.0.bottom" timestamp="1602638860925">
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom" timestamp="1602693310998">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1602638860925" />
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1602693310998" />
     <state width="1878" height="325" key="GridCell.Tab.0.bottom/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915041" />
     <state width="912" height="303" key="GridCell.Tab.0.bottom/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142130" />
-    <state width="1638" height="293" key="GridCell.Tab.0.center" timestamp="1602638860924">
+    <state width="1638" height="293" key="GridCell.Tab.0.center" timestamp="1602693310997">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1602638860924" />
+    <state width="1638" height="293" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1602693310997" />
     <state width="1878" height="325" key="GridCell.Tab.0.center/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915040" />
     <state width="912" height="303" key="GridCell.Tab.0.center/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142128" />
-    <state width="1638" height="293" key="GridCell.Tab.0.left" timestamp="1602638860923">
+    <state width="1638" height="293" key="GridCell.Tab.0.left" timestamp="1602693310997">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1602638860923" />
+    <state width="1638" height="293" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1602693310997" />
     <state width="1878" height="325" key="GridCell.Tab.0.left/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915040" />
     <state width="912" height="303" key="GridCell.Tab.0.left/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142127" />
-    <state width="1638" height="293" key="GridCell.Tab.0.right" timestamp="1602638860925">
+    <state width="1638" height="293" key="GridCell.Tab.0.right" timestamp="1602693310997">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1602638860925" />
+    <state width="1638" height="293" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1602693310997" />
     <state width="1878" height="325" key="GridCell.Tab.0.right/1680.-49.1920.1057/0.23.1680.972@1680.-49.1920.1057" timestamp="1602104915041" />
     <state width="912" height="303" key="GridCell.Tab.0.right/1680.-72.1920.1080/0.0.1680.1050@1680.-72.1920.1080" timestamp="1601926142129" />
     <state width="1878" height="323" key="GridCell.Tab.1.bottom" timestamp="1602014977460">

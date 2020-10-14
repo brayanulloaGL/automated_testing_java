@@ -13,6 +13,9 @@ public class BaseTests {
 
     public WebDriver driver;
 
+    /**
+     * This configuration will be included in all of the test cases
+     */
     @BeforeClass
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
