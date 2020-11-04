@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class CheckoutPage {
 
@@ -32,15 +33,21 @@ public class CheckoutPage {
      * Functions or methods are defined below
      */
     public void setFirstName(String firstName){
-        driver.findElement(firstNameField).sendKeys(firstName);
+        WebElement text = driver.findElement(firstNameField);
+        text.clear();
+        text.sendKeys(firstName);
     }
 
     public void setLastName(String lastName){
-        driver.findElement(lastNameField).sendKeys(lastName);
+        WebElement text = driver.findElement(lastNameField);
+        text.clear();
+        text.sendKeys(lastName);
     }
 
     public void setPostalCode(String postalCode){
-        driver.findElement(postalCodeField).sendKeys(postalCode);
+        WebElement text = driver.findElement(postalCodeField);
+        text.clear();
+        text.sendKeys(postalCode);
     }
 
     public void clickCancelButton(){
@@ -62,5 +69,4 @@ public class CheckoutPage {
     public String getOrderCompletedMessageText(){
         return driver.findElement(completeOrder).getText();
     }
-
 }

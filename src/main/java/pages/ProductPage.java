@@ -36,7 +36,6 @@ public class ProductPage {
     public String getProductPriceText(){
         return driver.findElement(productPrice).getText();
     }
-
 }
 
 

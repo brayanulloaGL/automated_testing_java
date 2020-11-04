@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LoginPage {
 
@@ -28,11 +29,15 @@ public class LoginPage {
      * Functions or methods are defined below
      */
     public void setUsername(String username){
-        driver.findElement(usernameField).sendKeys(username);
+        WebElement text = driver.findElement(usernameField);
+        text.clear();
+        text.sendKeys(username);
     }
 
     public void setPassword(String password){
-        driver.findElement(passwordField).sendKeys(password);
+        WebElement text = driver.findElement(passwordField);
+        text.clear();
+        text.sendKeys(password);
     }
 
     public void clickLoginButton(){

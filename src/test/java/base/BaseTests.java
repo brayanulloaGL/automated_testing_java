@@ -16,7 +16,7 @@ public class BaseTests {
     /**
      * This configuration will be included in all of the test cases
      */
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public class BaseTests {
         driver.get("https://www.saucedemo.com/");
     }
 
-    @AfterClass
+    @AfterClass (alwaysRun = true)
     public void tearDown(){
         driver.quit();
     }

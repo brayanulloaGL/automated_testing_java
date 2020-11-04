@@ -14,7 +14,7 @@ public class LoginTests extends BaseTests {
      * Positive scenario
      * This test case verifies the "LOGIN" with valid credentials
      */
-    @Test
+    @Test(groups = { "Login", "Positive" })
     public void validCredentials(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -30,7 +30,7 @@ public class LoginTests extends BaseTests {
      * Positive scenario
      * This test case verifies the "LOGIN" with locked credentials
      */
-    @Test
+    @Test(groups = { "Login", "Positive" })
     public void lockedCredentials(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("locked_out_user");
@@ -45,7 +45,7 @@ public class LoginTests extends BaseTests {
      * Negative scenario
      * This test case verifies the "LOGIN" with invalid credentials
      */
-    @Test
+    @Test(groups = { "Login", "Negative" })
     public void invalidCredentials(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("wrong_user");
