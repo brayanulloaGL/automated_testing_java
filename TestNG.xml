@@ -1,34 +1,34 @@
 <!--Example 1-->
 <!--This one will run all the test cases for each test class, one by one-->
 
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Suite1" verbose="1" >
-    <test name="Regression1">
-        <classes>
-            <class name="tests.CartTests"/>
-            <class name="tests.CheckoutTests"/>
-            <class name="tests.InventoryTests"/>
-            <class name="tests.LoginTests"/>
-            <class name="tests.ProductTests"/>
-        </classes>
-    </test>
-</suite>
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >-->
+<!--<suite name="Suite1" verbose="1" >-->
+<!--    <test name="Regression1">-->
+<!--        <classes>-->
+<!--            <class name="tests.CartTests"/>-->
+<!--            <class name="tests.CheckoutTests"/>-->
+<!--            <class name="tests.InventoryTests"/>-->
+<!--            <class name="tests.LoginTests"/>-->
+<!--            <class name="tests.ProductTests"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
 
 <!--Example 2-->
 <!--This one will run the first 4 classes in parallel, starting browsers at the same time-->
 
-<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
-<!--<suite name="Suite 1" parallel="classes" thread-count="4">-->
-<!--    <test name="Regression 1">-->
-<!--    <classes>-->
-<!--        <class name="tests.CartTests"/>-->
-<!--        <class name="tests.CheckoutTests"/>-->
-<!--        <class name="tests.InventoryTests"/>-->
-<!--        <class name="tests.LoginTests"/>-->
-<!--        <class name="tests.ProductTests"/>-->
-<!--    </classes>-->
-<!--    </test>-->
-<!--</suite>-->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite 1" parallel="classes" thread-count="4">
+    <test name="Regression 1">
+    <classes>
+        <class name="tests.CartTests"/>
+        <class name="tests.CheckoutTests"/>
+        <class name="tests.InventoryTests"/>
+        <class name="tests.LoginTests"/>
+        <class name="tests.ProductTests"/>
+    </classes>
+    </test>
+</suite>
 
 <!--Example 3-->
 <!--This one will run just the test cases tagged as Login and will exclude the positives scenarios from this Login test class-->
