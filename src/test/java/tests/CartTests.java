@@ -13,6 +13,9 @@ import static org.testng.Assert.assertTrue;
 
 public class CartTests extends BaseTests {
 
+    // An extra mile here could be to use data providers and have all this tests into just one method,
+    // and use data providers to pass the parameters down
+
     /**
      * Positive scenario
      * This test case verifies that the "CONTINUE SHOPPING" button is available on the Cart page
