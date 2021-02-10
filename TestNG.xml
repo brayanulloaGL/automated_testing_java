@@ -33,9 +33,14 @@
 <!--Example 3-->
 <!--This one will run just the test cases tagged as Login and will exclude the positives scenarios from this Login test class-->
 
+
+<!--SPLIT THIS IN SEVERAL XML FILES TO NOT BEING COMMENTING/UNCOMMENTING SECTIONS -->
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite 1" parallel="classes" thread-count="4">
     <test name="Regression 1">
+        <!--:Crossbrowsing: here you need to use parameters to define the browser you want to use (Chrome, firefox), -->
+        <!--you can define other parameters here as needed, it work with inheritance, so you can put it here,  -->
+        <!--or at other levels like suite,test, classes, etc -->
         <groups>
             <run>
                 <include name = "Login"/>
