@@ -7,6 +7,7 @@ REQUIRED
 4. Use groups in all test cases to mark them as regression, smoke, etc 
 5. Create a readme file to generate some documention about your project, for example to document how to run different suites based on the different testng xml files
 6. Add .idea folder and automated_testing_java.iml to the .gitignore file
+7. Reduce repetitive code
 
 
 OPTIONAL
