@@ -16,6 +16,12 @@ public class BaseTests {
     /**
      * This configuration will be included in all of the test cases
      */
+
+
+    //Consider implement a logger for troubleshooting
+    //Reference: https://logging.apache.org/log4j/2.x/
+
+    //Consider take screenshots and save it to the report when the test failed 
     @BeforeClass (alwaysRun = true)
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
