@@ -8,7 +8,7 @@ REQUIRED
 5. Create a readme file to generate some documention about your project, for example to document how to run different suites based on the different testng xml files
 6. Add .idea folder and automated_testing_java.iml to the .gitignore file
 7. Reduce repetitive code
-
+8. Create a PageBase class as a parent class for all page objects, that way you can use define the driver in just one place and use it with inheritance 
 
 OPTIONAL
 1. I would say that you can move the "pages" package to the "test/java" folder to have all related to automation in one place, it can be easier to access page objects if they are close to the tests package. It can more beneficial when a project is bigger and you have a lots of test cases, lots of pages, etc.
