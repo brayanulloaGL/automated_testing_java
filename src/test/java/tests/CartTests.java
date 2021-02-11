@@ -9,6 +9,8 @@ import pages.ProductPage;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+//Consider investigate about SoftAssertions
+
 
 
 public class CartTests extends BaseTests {
@@ -17,6 +19,16 @@ public class CartTests extends BaseTests {
      * Positive scenario
      * This test case verifies that the "CONTINUE SHOPPING" button is available on the Cart page
      */
+
+
+    //Investigate about Fluen Interface Pattern
+    //Reference: https://java-design-patterns.com/patterns/fluentinterface/#:~:text=Fluent%20Interface%20pattern%20provides%20easily,%2Dspecific%20language%20(DSL).
+
+
+    //Consider refactor the code to be more reusable, a lot of duplication, using before methods could reduce a lot of duplications
+    //Consider using Dependency Injection
+    //Reference: https://www.vogella.com/tutorials/DependencyInjection/article.html
+
     @Test
     public void continueShoppingButtonAvailable(){
         LoginPage loginPage = new LoginPage(driver);

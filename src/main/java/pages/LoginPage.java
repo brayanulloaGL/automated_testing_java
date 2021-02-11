@@ -28,6 +28,9 @@ public class LoginPage {
     /**
      * Functions or methods are defined below
      */
+
+    //Consider implement a single loggin method instead of calling this 3 
+    
     public void setUsername(String username){
         WebElement text = driver.findElement(usernameField);
         text.clear();
