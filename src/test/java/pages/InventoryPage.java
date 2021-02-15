@@ -21,7 +21,7 @@ public class InventoryPage {
 
     /**
      * This is the constructor of the Inventory Page
-     * @param driver
+     * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
     public InventoryPage(WebDriver driver){
         this.driver = driver;

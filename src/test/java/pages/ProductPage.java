@@ -16,7 +16,7 @@ public class ProductPage {
 
     /**
      * This is the constructor of the Login Page
-     * @param driver
+     * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
     public ProductPage(WebDriver driver){
         this.driver = driver;
