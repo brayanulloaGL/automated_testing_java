@@ -10,5 +10,4 @@ public class BasePages {
         this.driver = driver;
     }
 
-
 }
