@@ -1,12 +1,11 @@
 package pages;
 
+import base.BasePages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class CheckoutPage {
-
-    private WebDriver driver;
+public class CheckoutPage extends BasePages {
 
     /**
      * Web Elements are defined below
@@ -20,13 +19,13 @@ public class CheckoutPage {
     private By finishButton = By.cssSelector(".cart_button");
     private By completeOrder = By.cssSelector(".complete-header");
 
-
     /**
      * This is the constructor of the Checkout Page
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
-    public CheckoutPage(WebDriver driver){
-        this.driver = driver;
+
+    public CheckoutPage(WebDriver driver) {
+        super(driver);
     }
 
     /**

@@ -1,11 +1,10 @@
 package pages;
 
+import base.BasePages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class CartPage {
-
-    private WebDriver driver;
+public class CartPage extends BasePages {
 
     /**
      * Web Elements are defined below
@@ -17,12 +16,14 @@ public class CartPage {
     private By quantityProducts = By.cssSelector(".cart_quantity");
     private By subheader = By.cssSelector(".subheader");
 
+
     /**
      * This is the constructor of the Cart Page
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
-    public CartPage(WebDriver driver){
-        this.driver = driver;
+
+    public CartPage(WebDriver driver) {
+        super(driver);
     }
 
     /**

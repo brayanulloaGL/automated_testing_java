@@ -1,12 +1,11 @@
 package pages;
 
+import base.BasePages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
-
-    private WebDriver driver;
+public class LoginPage extends BasePages {
 
     /**
      * Web Elements are defined below
@@ -21,8 +20,9 @@ public class LoginPage {
      * This is the constructor of the Login Page
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
-    public LoginPage(WebDriver driver){
-        this.driver = driver;
+
+    public LoginPage(WebDriver driver) {
+        super(driver);
     }
 
     /**
