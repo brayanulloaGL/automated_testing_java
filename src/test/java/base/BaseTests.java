@@ -15,12 +15,18 @@ public class BaseTests {
 
     public WebDriver driver;
 
+    private String sauceUserName;
+    private String saucePassword;
+
     /**
      * This configuration will be included in all of the test cases
      */
     @BeforeClass (alwaysRun = true)
     @Parameters ("browser")
     public void setUp(String browserName){
+
+        this.setSauceUserName(System.getenv("SAUCE_USERNAME"));
+        this.setSaucePassword(System.getenv("SAUCE_PASSWORD"));
 
         if (browserName.equalsIgnoreCase("chrome")){
             driver = new ChromeDriver();
@@ -34,8 +40,12 @@ public class BaseTests {
     }
 
     @BeforeMethod
-    public void goHome(){
+    public void loginBase(){
         driver.get("https://www.saucedemo.com/");
+
+//Agregar lineas de codigo de login en clase Test aca
+
+
     }
 
     @AfterClass (alwaysRun = true)
@@ -43,4 +53,19 @@ public class BaseTests {
         driver.quit();
     }
 
+    public String getSauceUserName() {
+        return sauceUserName;
+    }
+
+    public void setSauceUserName(String sauceUserName) {
+        this.sauceUserName = sauceUserName;
+    }
+
+    public String getSaucePassword() {
+        return saucePassword;
+    }
+
+    public void setSaucePassword(String saucePassword) {
+        this.saucePassword = saucePassword;
+    }
 }
