@@ -16,9 +16,11 @@ public class LoginTests extends BaseTests {
      */
     @Test(groups = { "Login", "Positive" })
     public void validCredentials(){
+        String sauceUserName = System.getenv("SAUCE_USERNAME");
+        String saucePassword = System.getenv("SAUCE_PASSWORD");
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
+        loginPage.setUsername(sauceUserName);
+        loginPage.setPassword(saucePassword);
         loginPage.clickLoginButton();
         InventoryPage inventoryPage = new InventoryPage(driver);
         assertTrue(inventoryPage.getInventoryContainerText()
@@ -30,7 +32,7 @@ public class LoginTests extends BaseTests {
      * Positive scenario
      * This test case verifies the "LOGIN" with locked credentials
      */
-    @Test(groups = { "Login", "Positive" })
+    @Test(groups = { "Login", "Negative" })
     public void lockedCredentials(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("locked_out_user");

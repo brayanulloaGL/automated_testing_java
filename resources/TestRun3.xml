@@ -4,11 +4,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite 1" parallel="classes" thread-count="4">
     <test name="Regression 1">
-        <parameter name="browser" value="firefox"/>
+        <parameter name="browser" value="chrome"/>
         <groups>
             <run>
                 <include name = "Login"/>
-                <exclude name = "Positive"/>
+                <exclude name = "Negative"/>
             </run>
         </groups>
         <classes>
