@@ -31,13 +31,13 @@ public class LoginPage extends BasePages {
     public void setUsername(String username){
         WebElement text = driver.findElement(usernameField);
         text.clear();
-        text.sendKeys(new CharSequence[]{username});
+        text.sendKeys(username);
     }
 
     public void setPassword(String password){
         WebElement text = driver.findElement(passwordField);
         text.clear();
-        text.sendKeys(new CharSequence[]{password});
+        text.sendKeys(password);
     }
 
     public void clickLoginButton(){
