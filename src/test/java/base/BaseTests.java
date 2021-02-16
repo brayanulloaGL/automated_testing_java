@@ -10,7 +10,6 @@ import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
 
-
 public class BaseTests {
 
     public WebDriver driver;
@@ -21,6 +20,7 @@ public class BaseTests {
     /**
      * This configuration will be included in all of the test cases
      */
+
     @BeforeClass (alwaysRun = true)
     @Parameters ("browser")
     public void setUp(String browserName){
