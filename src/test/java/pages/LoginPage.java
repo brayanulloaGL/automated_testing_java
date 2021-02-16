@@ -10,11 +10,11 @@ public class LoginPage extends BasePages {
     /**
      * Web Elements are defined below
      */
-    private final By usernameField = By.id("user-name");
-    private final By passwordField = By.id("password");
-    private final By loginButton = By.id("login-button");
-    private final By credentialsSection = By.id("login_credentials");
-    private final By errorMessage = By.cssSelector("[data-test='error']");
+    private By usernameField = By.id("user-name");
+    private By passwordField = By.id("password");
+    private By loginButton = By.id("login-button");
+    private By credentialsSection = By.id("login_credentials");
+    private By errorMessage = By.cssSelector("[data-test='error']");
 
     /**
      * This is the constructor of the Login Page
