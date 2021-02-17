@@ -3,10 +3,7 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
@@ -39,15 +36,15 @@ public class BaseTests {
         driver.get("https://www.saucedemo.com/");
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS); // Some elements are not interactable unless this timeout is added to the framework
 
+    }
+
+    @BeforeMethod
+    public void goHome(){
+        driver.get("https://www.saucedemo.com/");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername(this.getSauceUserName());
         loginPage.setPassword(this.getSaucePassword());
         loginPage.clickLoginButton();
-    }
-
-    @BeforeMethod
-    public void loginBase(){
-        driver.get("https://www.saucedemo.com/");
     }
 
     @AfterClass (alwaysRun = true)

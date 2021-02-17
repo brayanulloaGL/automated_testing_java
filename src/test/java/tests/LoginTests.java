@@ -16,10 +16,10 @@ public class LoginTests extends BaseTests {
      */
     @Test(groups = { "Login", "Positive" })
     public void validCredentials(){
-//        LoginPage loginPage = new LoginPage(driver);
-//        loginPage.setUsername(this.getSauceUserName());
-//        loginPage.setPassword(this.getSaucePassword());
-//        loginPage.clickLoginButton();
+//      LoginPage loginPage = new LoginPage(driver);
+//      loginPage.setUsername(this.getSauceUserName());
+//      loginPage.setPassword(this.getSaucePassword());
+//      loginPage.clickLoginButton();
         InventoryPage inventoryPage = new InventoryPage(driver);
         assertTrue(inventoryPage.getInventoryContainerText()
                         .contains("Products"),
