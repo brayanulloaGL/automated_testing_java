@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,13 +40,13 @@ public class BaseTests {
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS); // Some elements are not interactable unless this timeout is added to the framework
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups = "baseLogin")
     public void loginBase(){
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.setUsername(this.getSauceUserName());
+        loginPage.setPassword(this.getSaucePassword());
+        loginPage.clickLoginButton();
         driver.get("https://www.saucedemo.com/");
-
-//Agregar lineas de codigo de login en clase Test aca
-
-
     }
 
     @AfterClass (alwaysRun = true)
