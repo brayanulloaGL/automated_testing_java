@@ -38,14 +38,15 @@ public class BaseTests {
 
         driver.get("https://www.saucedemo.com/");
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS); // Some elements are not interactable unless this timeout is added to the framework
-    }
 
-    @BeforeMethod(groups = "baseLogin")
-    public void loginBase(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername(this.getSauceUserName());
         loginPage.setPassword(this.getSaucePassword());
         loginPage.clickLoginButton();
+    }
+
+    @BeforeMethod
+    public void loginBase(){
         driver.get("https://www.saucedemo.com/");
     }
 
