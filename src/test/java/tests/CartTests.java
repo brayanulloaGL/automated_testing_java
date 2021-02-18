@@ -17,7 +17,7 @@ public class CartTests extends BaseTests {
      * Positive scenario
      * This test case verifies that the "CONTINUE SHOPPING" button is available on the Cart page
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void continueShoppingButtonAvailable(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -33,7 +33,7 @@ public class CartTests extends BaseTests {
      * Positive scenario
      * This test case verifies that the "CHECKOUT" button is available on the Cart page
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void checkoutButtonAvailable(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -49,7 +49,7 @@ public class CartTests extends BaseTests {
      * Positive scenario
      * This test case verifies that the cart badge shows up as soon as any product is added to the cart
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void cartBadge(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");

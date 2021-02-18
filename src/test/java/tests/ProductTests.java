@@ -15,7 +15,7 @@ public class ProductTests extends BaseTests {
      * Positive scenario
      * This test case verifies that the price of a product is correct on the Product page
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void correctProductPrice(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -33,7 +33,7 @@ public class ProductTests extends BaseTests {
      * Positive scenario
      * This test case verifies that a product is added to the cart successfully (from the Product page)
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void productAddedToCart(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -54,7 +54,7 @@ public class ProductTests extends BaseTests {
      * Positive scenario
      * this test case verifies the "BACK" button functionality on the Product page
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void backButton(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");

@@ -12,7 +12,7 @@ public class CheckoutTests extends BaseTests {
      * Positive scenario
      * End to End Test | This test case verifies that an order is completed from scratch successfully
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void completeOrder(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -40,7 +40,7 @@ public class CheckoutTests extends BaseTests {
      * Negative scenario
      * This test case verifies that an error message shows up when the checkout form is submitted without First Name
      */
-    @Test
+    @Test(groups = { "Regression", "Negative" })
     public void submitCheckoutFormWithoutFirstName(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -67,7 +67,7 @@ public class CheckoutTests extends BaseTests {
      * Negative scenario
      * This test case verifies that an error message shows up when the checkout form is submitted without Last Name
      */
-    @Test
+    @Test(groups = { "Regression", "Negative" })
     public void submitCheckoutFormWithoutLastName(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -94,7 +94,7 @@ public class CheckoutTests extends BaseTests {
      * Negative scenario
      * This test case verifies that an error message shows up when the checkout form is submitted without Postal Code
      */
-    @Test
+    @Test(groups = { "Regression", "Negative" })
     public void submitCheckoutFormWithoutPostalCode(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -121,7 +121,7 @@ public class CheckoutTests extends BaseTests {
      * Positive scenario
      * This test case verifies that the "CANCEL" button from the Checkout Page works as expected
      */
-    @Test
+    @Test(groups = { "Regression", "Positive" })
     public void cancelButton(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");

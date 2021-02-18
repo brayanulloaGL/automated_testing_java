@@ -14,7 +14,7 @@ public class InventoryTests extends BaseTests {
      * Positive scenario
      * This test case verifies the name of a product
      */
-    @Test
+    @Test(groups = { "Smoke", "Positive" })
     public void correctItemName(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -30,7 +30,7 @@ public class InventoryTests extends BaseTests {
      * Positive scenario
      * This test case verifies that a product is added to the cart successfully (from the Inventory page)
      */
-    @Test
+    @Test(groups = { "Smoke", "Positive" })
     public void productAddedToCart(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -49,7 +49,7 @@ public class InventoryTests extends BaseTests {
      * Positive scenario
      * This test case verifies the "LOGOUT" functionality
      */
-    @Test
+    @Test(groups = { "Regression", "Smoke" })
     public void logout(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
