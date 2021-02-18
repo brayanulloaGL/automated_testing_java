@@ -11,7 +11,6 @@ import static org.testng.Assert.assertTrue;
 public class InventoryTests extends BaseTests {
 
     /**
-     * Positive scenario
      * This test case verifies the name of a product
      */
     @Test(groups = { "Smoke", "Positive" })
@@ -27,7 +26,6 @@ public class InventoryTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * This test case verifies that a product is added to the cart successfully (from the Inventory page)
      */
     @Test(groups = { "Smoke", "Positive" })
@@ -46,7 +44,6 @@ public class InventoryTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * This test case verifies the "LOGOUT" functionality
      */
     @Test(groups = { "Regression", "Smoke" })

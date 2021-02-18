@@ -12,7 +12,6 @@ import static org.testng.Assert.assertTrue;
 public class ProductTests extends BaseTests {
 
     /**
-     * Positive scenario
      * This test case verifies that the price of a product is correct on the Product page
      */
     @Test(groups = { "Regression", "Positive" })
@@ -30,7 +29,6 @@ public class ProductTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * This test case verifies that a product is added to the cart successfully (from the Product page)
      */
     @Test(groups = { "Regression", "Positive" })
@@ -51,7 +49,6 @@ public class ProductTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * this test case verifies the "BACK" button functionality on the Product page
      */
     @Test(groups = { "Regression", "Positive" })

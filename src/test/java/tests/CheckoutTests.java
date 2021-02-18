@@ -9,7 +9,6 @@ import static org.testng.Assert.assertTrue;
 public class CheckoutTests extends BaseTests {
 
     /**
-     * Positive scenario
      * End to End Test | This test case verifies that an order is completed from scratch successfully
      */
     @Test(groups = { "Regression", "Positive" })
@@ -37,7 +36,6 @@ public class CheckoutTests extends BaseTests {
     }
 
     /**
-     * Negative scenario
      * This test case verifies that an error message shows up when the checkout form is submitted without First Name
      */
     @Test(groups = { "Regression", "Negative" })
@@ -64,7 +62,6 @@ public class CheckoutTests extends BaseTests {
     }
 
     /**
-     * Negative scenario
      * This test case verifies that an error message shows up when the checkout form is submitted without Last Name
      */
     @Test(groups = { "Regression", "Negative" })
@@ -91,7 +88,6 @@ public class CheckoutTests extends BaseTests {
     }
 
     /**
-     * Negative scenario
      * This test case verifies that an error message shows up when the checkout form is submitted without Postal Code
      */
     @Test(groups = { "Regression", "Negative" })
@@ -118,7 +114,6 @@ public class CheckoutTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * This test case verifies that the "CANCEL" button from the Checkout Page works as expected
      */
     @Test(groups = { "Regression", "Positive" })

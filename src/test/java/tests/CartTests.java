@@ -14,7 +14,6 @@ import static org.testng.Assert.assertTrue;
 public class CartTests extends BaseTests {
 
     /**
-     * Positive scenario
      * This test case verifies that the "CONTINUE SHOPPING" button is available on the Cart page
      */
     @Test(groups = { "Regression", "Positive" })
@@ -30,7 +29,6 @@ public class CartTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * This test case verifies that the "CHECKOUT" button is available on the Cart page
      */
     @Test(groups = { "Regression", "Positive" })
@@ -46,7 +44,6 @@ public class CartTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * This test case verifies that the cart badge shows up as soon as any product is added to the cart
      */
     @Test(groups = { "Regression", "Positive" })

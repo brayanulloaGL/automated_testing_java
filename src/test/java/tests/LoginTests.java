@@ -11,7 +11,6 @@ import static org.testng.Assert.*;
 public class LoginTests extends BaseTests {
 
     /**
-     * Positive scenario
      * This test case verifies the "LOGIN" with valid credentials
      */
     @Test(groups = { "Login", "Positive" })
@@ -27,7 +26,6 @@ public class LoginTests extends BaseTests {
     }
 
     /**
-     * Positive scenario
      * This test case verifies the "LOGIN" with locked credentials
      */
     @Test(groups = { "Login", "Negative" })
@@ -42,7 +40,6 @@ public class LoginTests extends BaseTests {
     }
 
     /**
-     * Negative scenario
      * This test case verifies the "LOGIN" with invalid credentials
      */
     @Test(groups = { "Login", "Negative" })
