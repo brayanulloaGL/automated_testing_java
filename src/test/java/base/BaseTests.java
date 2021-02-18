@@ -1,5 +1,6 @@
 package base;
 
+import com.beust.jcommander.Parameter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,8 +21,8 @@ public class BaseTests {
      */
 
     @BeforeClass (alwaysRun = true)
-    @Parameters ("browser")
-    public void setUp(String browserName){
+    @Parameters ({"browser", "url"})
+    public void setUp(String browserName, String URL){
 
         this.setSauceUserName(System.getenv("SAUCE_USERNAME"));
         this.setSaucePassword(System.getenv("SAUCE_PASSWORD"));
@@ -33,18 +34,19 @@ public class BaseTests {
             driver = new FirefoxDriver();
         }
 
-        driver.get("https://www.saucedemo.com/");
+        driver.get(URL);
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS); // Some elements are not interactable unless this timeout is added to the framework
 
     }
 
     @BeforeMethod
-    public void goHome(){
-        driver.get("https://www.saucedemo.com/");
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername(this.getSauceUserName());
-        loginPage.setPassword(this.getSaucePassword());
-        loginPage.clickLoginButton();
+    @Parameters ("url")
+    public void goHome(String URL){
+        driver.get(URL);
+//        LoginPage loginPage = new LoginPage(driver);
+//        loginPage.setUsername(this.getSauceUserName());
+//        loginPage.setPassword(this.getSaucePassword());
+//        loginPage.clickLoginButton();
     }
 
     @AfterClass (alwaysRun = true)
