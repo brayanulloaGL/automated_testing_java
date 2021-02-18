@@ -3,6 +3,7 @@ package base;
 import com.beust.jcommander.Parameter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import pages.LoginPage;
@@ -16,13 +17,9 @@ public class BaseTests {
     private String sauceUserName;
     private String saucePassword;
 
-    /**
-     * This configuration will be included in all of the test cases
-     */
-
     @BeforeClass (alwaysRun = true)
-    @Parameters ({"browser", "url"})
-    public void setUp(String browserName, String URL){
+    @Parameters ({"browser", "url", "implicitWait"})
+    public void setUp(String browserName, String URL, int implicitWait) throws Exception {
 
         this.setSauceUserName(System.getenv("SAUCE_USERNAME"));
         this.setSaucePassword(System.getenv("SAUCE_PASSWORD"));
@@ -30,13 +27,22 @@ public class BaseTests {
         if (browserName.equalsIgnoreCase("chrome")){
             driver = new ChromeDriver();
         }
+        else if (browserName.equalsIgnoreCase("headless")){
+            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+        }
+
         else if (browserName.equalsIgnoreCase("firefox")){
             driver = new FirefoxDriver();
         }
 
-        driver.get(URL);
-        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS); // Some elements are not interactable unless this timeout is added to the framework
+        else{
+            throw new Exception("Browser is not correct");
+        }
 
+        driver.get(URL);
+        driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
     }
 
     @BeforeMethod

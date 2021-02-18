@@ -6,6 +6,7 @@
     <test name="Regression1">
         <parameter name="browser" value="firefox"/>
         <parameter name="url" value="https://www.saucedemo.com/"/>
+        <parameter name="implicitWait" value= "120"/>
         <classes>
             <class name="tests.CartTests"/>
             <class name="tests.CheckoutTests"/>
