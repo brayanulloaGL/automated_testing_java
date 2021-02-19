@@ -41,8 +41,8 @@ public class ProductTests extends BaseTests {
         inventoryPage.clickProduct("Sauce Labs Bike Light");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         assertTrue(cartPage.getQuantityProductsText()
                         .contains("1"),
                 "No item has been added to the cart");

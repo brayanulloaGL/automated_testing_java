@@ -16,6 +16,7 @@ public class InventoryPage extends BasePages {
     private By menuButton = By.cssSelector(".bm-burger-button");
     private By product = By.cssSelector(".inventory_item_name");
     private By addToCartButton = By.cssSelector(".btn_inventory");
+    private By cart = By.cssSelector(".fa-shopping-cart");
     private String productContainer = "//div[@class='inventory_item_name'][text()='%s']/ancestor::div[@class='inventory_item']";
 
     /**
@@ -32,6 +33,10 @@ public class InventoryPage extends BasePages {
      */
     public void clickMenuButton(){
         driver.findElement(menuButton).click();
+    }
+
+    public void clickCart(){
+        driver.findElement(cart).click();
     }
 
     public void clickLogoutButton(){

@@ -36,8 +36,8 @@ public class InventoryTests extends BaseTests {
         loginPage.clickLoginButton();
         InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.clickAddToCartButton("Sauce Labs Backpack");
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         assertTrue(cartPage.getQuantityProductsText()
                         .contains("1"),
                 "No item has been added to the cart");

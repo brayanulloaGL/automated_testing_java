@@ -9,7 +9,7 @@ public class CartPage extends BasePages {
     /**
      * Web Elements are defined below
      */
-    private By cart = By.cssSelector(".fa-shopping-cart");
+
     private By continueShoppingButton = By.linkText("CONTINUE SHOPPING");
     private By checkoutButton = By.cssSelector(".checkout_button");
     private By cartBadge = By.cssSelector(".shopping_cart_badge");
@@ -29,9 +29,7 @@ public class CartPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    public void clickCart(){
-        driver.findElement(cart).click();
-    }
+
 
     public void clickCheckoutButton(){
         driver.findElement(checkoutButton).click();

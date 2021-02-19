@@ -22,8 +22,9 @@ public class CartTests extends BaseTests {
         loginPage.setUsername("standard_user");
         loginPage.setPassword("secret_sauce");
         loginPage.clickLoginButton();
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         String text = cartPage.getContinueShoppingButtonText();
         assertEquals(text, "CONTINUE SHOPPING", "Button is not available!");
     }
@@ -37,8 +38,9 @@ public class CartTests extends BaseTests {
         loginPage.setUsername("standard_user");
         loginPage.setPassword("secret_sauce");
         loginPage.clickLoginButton();
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         String text = cartPage.getCheckoutButtonText();
         assertEquals(text, "CHECKOUT", "Checkout button is not available!");
     }

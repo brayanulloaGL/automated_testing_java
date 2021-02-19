@@ -21,8 +21,8 @@ public class CheckoutTests extends BaseTests {
         inventoryPage.clickProduct("Sauce Labs Fleece Jacket");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.setFirstName("Brayan");
@@ -48,8 +48,8 @@ public class CheckoutTests extends BaseTests {
         inventoryPage.clickProduct("Sauce Labs Backpack");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.setFirstName("");
@@ -74,8 +74,8 @@ public class CheckoutTests extends BaseTests {
         inventoryPage.clickProduct("Sauce Labs Bolt T-Shirt");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.setFirstName("Brayan");
@@ -100,8 +100,8 @@ public class CheckoutTests extends BaseTests {
         inventoryPage.clickProduct("Sauce Labs Bike Light");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.setFirstName("Brayan");
@@ -126,8 +126,8 @@ public class CheckoutTests extends BaseTests {
         inventoryPage.clickProduct("Sauce Labs Onesie");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
+        inventoryPage.clickCart();
         CartPage cartPage = new CartPage(driver);
-        cartPage.clickCart();
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.clickCancelButton();
