@@ -13,7 +13,7 @@ public class InventoryTests extends BaseTests {
     /**
      * This test case verifies the name of a product
      */
-    @Test(groups = { "Smoke", "Positive" })
+    @Test(groups = { "UI", "Positive" })
     public void correctItemName(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");

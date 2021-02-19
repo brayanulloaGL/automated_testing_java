@@ -16,7 +16,7 @@ public class CartTests extends BaseTests {
     /**
      * This test case verifies that the "CONTINUE SHOPPING" button is available on the Cart page
      */
-    @Test(groups = { "Regression", "Positive" })
+    @Test(groups = { "UI", "Positive" })
     public void continueShoppingButtonAvailable(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
@@ -32,7 +32,7 @@ public class CartTests extends BaseTests {
     /**
      * This test case verifies that the "CHECKOUT" button is available on the Cart page
      */
-    @Test(groups = { "Regression", "Positive" })
+    @Test(groups = { "UI", "Positive" })
     public void checkoutButtonAvailable(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");

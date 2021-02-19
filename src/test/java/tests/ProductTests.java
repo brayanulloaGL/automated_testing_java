@@ -14,7 +14,7 @@ public class ProductTests extends BaseTests {
     /**
      * This test case verifies that the price of a product is correct on the Product page
      */
-    @Test(groups = { "Regression", "Positive" })
+    @Test(groups = { "UI", "Positive" })
     public void correctProductPrice(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("standard_user");
