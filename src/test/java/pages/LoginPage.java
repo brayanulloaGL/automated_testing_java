@@ -28,17 +28,7 @@ public class LoginPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    public void setUsername(String username){
-        WebElement text = driver.findElement(usernameField);
-        text.clear();
-        text.sendKeys(username);
-    }
-
-    public void setPassword(String password){
-        WebElement text = driver.findElement(passwordField);
-        text.clear();
-        text.sendKeys(password);
-    }
+    // Llamar metodos de BasePage aca?
 
     public void clickLoginButton(){
         driver.findElement(loginButton).click();
