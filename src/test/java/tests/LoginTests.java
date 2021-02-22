@@ -3,8 +3,6 @@ package tests;
 import base.BaseTests;
 import org.testng.annotations.Test;
 import pages.LoginPage;
-import pages.InventoryPage;
-
 
 import static org.testng.Assert.*;
 
