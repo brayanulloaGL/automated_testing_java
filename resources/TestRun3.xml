@@ -10,7 +10,7 @@
         <groups>
             <run>
                 <include name = "Login"/>
-                <exclude name = "Negative"/>
+                <exclude name = "Positive"/>
             </run>
         </groups>
         <classes>

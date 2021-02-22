@@ -11,7 +11,7 @@ public class LoginTests extends BaseTests {
     /**
      * This test case verifies the "LOGIN" with valid credentials
      */
-    @Test(groups = { "Login", "Positive" })
+    @Test(groups = {"Login", "Positive" })
     public void validCredentials(){
         assertTrue(this.getInventoryPage().getInventoryContainerText()
                         .contains("Products"),
@@ -21,10 +21,10 @@ public class LoginTests extends BaseTests {
     /**
      * This test case verifies the "LOGIN" with locked credentials
      */
-    @Test(groups = { "Login", "Negative" })
+    @Test(groups = {"Login", "Negative" })
     public void lockedCredentials(){
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("locked_out_user");
+        loginPage.setUsername("wrong_user");
         loginPage.setPassword("secret_sauce");
         loginPage.clickLoginButton();
         assertTrue(loginPage.getErrorMessageText()
@@ -35,7 +35,7 @@ public class LoginTests extends BaseTests {
     /**
      * This test case verifies the "LOGIN" with invalid credentials
      */
-    @Test(groups = { "Login", "Negative" })
+    @Test(groups = {"Login", "Negative" })
     public void invalidCredentials(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("wrong_user");

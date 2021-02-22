@@ -11,7 +11,7 @@
             <class name="tests.CartTests"/>
             <class name="tests.CheckoutTests"/>
             <class name="tests.InventoryTests"/>
-<!--            <class name="tests.LoginTests"/>-->
+            <class name="tests.LoginTests"/>
             <class name="tests.ProductTests"/>
         </classes>
     </test>
