@@ -15,12 +15,7 @@ public class InventoryTests extends BaseTests {
      */
     @Test(groups = { "UI", "Positive" })
     public void correctItemName(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        assertTrue(inventoryPage.getRandomProductText()
+        assertTrue(this.getInventoryPage().getRandomProductText()
                         .contains("Sauce Labs Backpack"),
                 "The name of the item 4 is not correct!");
     }
@@ -30,13 +25,8 @@ public class InventoryTests extends BaseTests {
      */
     @Test(groups = { "Smoke", "Positive" })
     public void productAddedToCart(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickAddToCartButton("Sauce Labs Backpack");
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickAddToCartButton("Sauce Labs Backpack");
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         assertTrue(cartPage.getQuantityProductsText()
                         .contains("1"),
@@ -48,13 +38,9 @@ public class InventoryTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Smoke" })
     public void logout(){
+        this.getInventoryPage().clickMenuButton();
+        this.getInventoryPage().clickLogoutButton();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickMenuButton();
-        inventoryPage.clickLogoutButton();
         assertTrue(loginPage.getCredentialsSectionText()
                         .contains("Accepted usernames are:"),
                 "The text of this section has been updated!");

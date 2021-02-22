@@ -13,15 +13,10 @@ public class CheckoutTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Positive" })
     public void completeOrder(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Fleece Jacket");
+        this.getInventoryPage().clickProduct("Sauce Labs Fleece Jacket");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
@@ -40,15 +35,10 @@ public class CheckoutTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Negative" })
     public void submitCheckoutFormWithoutFirstName(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Backpack");
+        this.getInventoryPage().clickProduct("Sauce Labs Backpack");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
@@ -66,15 +56,10 @@ public class CheckoutTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Negative" })
     public void submitCheckoutFormWithoutLastName(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Bolt T-Shirt");
+        this.getInventoryPage().clickProduct("Sauce Labs Bolt T-Shirt");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
@@ -92,15 +77,10 @@ public class CheckoutTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Negative" })
     public void submitCheckoutFormWithoutPostalCode(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Bike Light");
+        this.getInventoryPage().clickProduct("Sauce Labs Bike Light");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
@@ -118,15 +98,10 @@ public class CheckoutTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Positive" })
     public void cancelButton(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Onesie");
+        this.getInventoryPage().clickProduct("Sauce Labs Onesie");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         cartPage.clickCheckoutButton();
         CheckoutPage checkoutPage = new CheckoutPage(driver);

@@ -18,12 +18,7 @@ public class CartTests extends BaseTests {
      */
     @Test(groups = { "UI", "Positive" })
     public void continueShoppingButtonAvailable(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         String text = cartPage.getContinueShoppingButtonText();
         assertEquals(text, "CONTINUE SHOPPING", "Button is not available!");
@@ -34,12 +29,7 @@ public class CartTests extends BaseTests {
      */
     @Test(groups = { "UI", "Positive" })
     public void checkoutButtonAvailable(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         String text = cartPage.getCheckoutButtonText();
         assertEquals(text, "CHECKOUT", "Checkout button is not available!");
@@ -50,12 +40,7 @@ public class CartTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Positive" })
     public void cartBadge(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Onesie");
+        this.getInventoryPage().clickProduct("Sauce Labs Onesie");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
         CartPage cartPage = new CartPage(driver);

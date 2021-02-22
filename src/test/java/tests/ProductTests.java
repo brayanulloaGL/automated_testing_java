@@ -16,12 +16,7 @@ public class ProductTests extends BaseTests {
      */
     @Test(groups = { "UI", "Positive" })
     public void correctProductPrice(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Bolt T-Shirt");
+        this.getInventoryPage().clickProduct("Sauce Labs Bolt T-Shirt");
         ProductPage productPage = new ProductPage(driver);
         assertTrue(productPage.getProductPriceText()
                         .contains("15.99"),
@@ -33,15 +28,10 @@ public class ProductTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Positive" })
     public void productAddedToCart(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Bike Light");
+        this.getInventoryPage().clickProduct("Sauce Labs Bike Light");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
-        inventoryPage.clickCart();
+        this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         assertTrue(cartPage.getQuantityProductsText()
                         .contains("1"),
@@ -53,15 +43,10 @@ public class ProductTests extends BaseTests {
      */
     @Test(groups = { "Regression", "Positive" })
     public void backButton(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("standard_user");
-        loginPage.setPassword("secret_sauce");
-        loginPage.clickLoginButton();
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.clickProduct("Sauce Labs Onesie");
+        this.getInventoryPage().clickProduct("Sauce Labs Onesie");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickBackButton();
-        assertTrue(inventoryPage.getInventoryContainerText()
+        assertTrue(this.getInventoryPage().getInventoryContainerText()
                         .contains("Products"),
                 "The text from the inventory container is incorrect!");
     }
