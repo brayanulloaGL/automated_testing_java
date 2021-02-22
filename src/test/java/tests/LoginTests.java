@@ -1,6 +1,5 @@
 package tests;
 
-import base.BasePages;
 import base.BaseTests;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
@@ -24,7 +23,7 @@ public class LoginTests extends BaseTests {
      * This test case verifies the "LOGIN" with locked credentials
      */
 
-    @Test(groups = {"Login", "Negative" })
+    @Test(groups = {"Login", "Negative" }, enabled = false)
     public void lockedCredentials(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("wrong_user");
@@ -38,7 +37,7 @@ public class LoginTests extends BaseTests {
     /**
      * This test case verifies the "LOGIN" with invalid credentials
      */
-    @Test(groups = {"Login", "Negative" })
+    @Test(groups = {"Login", "Negative"}, enabled = false)
     public void invalidCredentials(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("wrong_user");
