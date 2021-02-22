@@ -1,6 +1,7 @@
 package pages;
 
 import base.BasePages;
+import base.BotStyle;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,10 +29,19 @@ public class LoginPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    // Llamar metodos de BasePage aca?
+    public LoginPage setUsername(String username){
+        BotStyle.typeText(this.driver, usernameField, username);
+        return this;
+    }
 
-    public void clickLoginButton(){
+    public LoginPage setPassword(String password){
+        BotStyle.typeText(this.driver, passwordField, password);
+        return this;
+    }
+
+    public InventoryPage clickLoginButton(){
         driver.findElement(loginButton).click();
+        return new InventoryPage(this.driver);
     }
 
     public String getErrorMessageText(){
