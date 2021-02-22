@@ -1,6 +1,7 @@
 package pages;
 
 import base.BasePages;
+import base.BotStyle;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,22 +32,19 @@ public class CheckoutPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    public void setFirstName(String firstName){
-        WebElement text = driver.findElement(firstNameField);
-        text.clear();
-        text.sendKeys(firstName);
+    public CheckoutPage setFirstName(String firstName){
+        BotStyle.typeText(this.driver, firstNameField, firstName);
+        return this;
     }
 
-    public void setLastName(String lastName){
-        WebElement text = driver.findElement(lastNameField);
-        text.clear();
-        text.sendKeys(lastName);
+    public CheckoutPage setLastName(String lastName){
+        BotStyle.typeText(this.driver, lastNameField, lastName);
+        return this;
     }
 
-    public void setPostalCode(String postalCode){
-        WebElement text = driver.findElement(postalCodeField);
-        text.clear();
-        text.sendKeys(postalCode);
+    public CheckoutPage setPostalCode(String postalCode){
+        BotStyle.typeText(this.driver, postalCodeField, postalCode);
+        return this;
     }
 
     public void clickCancelButton(){
