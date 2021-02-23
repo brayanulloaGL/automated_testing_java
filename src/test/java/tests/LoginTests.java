@@ -26,7 +26,7 @@ public class LoginTests extends BaseTests {
     @Test(groups = {"Login", "Negative" }, enabled = false)
     public void lockedCredentials(){
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.setUsername("wrong_user");
+        loginPage.setUsername("locked_out_user");
         loginPage.setPassword("secret_sauce");
         loginPage.clickLoginButton();
         assertTrue(loginPage.getErrorMessageText()
