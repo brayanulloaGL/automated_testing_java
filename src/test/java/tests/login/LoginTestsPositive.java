@@ -10,7 +10,7 @@ public class LoginTestsPositive extends BaseTests {
     /**
      * This test case verifies the "LOGIN" with valid credentials
      */
-    @Test(groups = {"Login", "Positive"})
+        @Test(groups = {"Regression", "Positive"})
     public void validCredentials() {
         assertTrue(this.getInventoryPage().getInventoryContainerText()
                         .contains("Products"),

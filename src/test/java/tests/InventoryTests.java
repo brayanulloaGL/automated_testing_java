@@ -21,7 +21,7 @@ public class InventoryTests extends BaseTests {
     /**
      * This test case verifies that a product is added to the cart successfully (from the Inventory page)
      */
-    @Test(groups = {"Smoke", "Positive"})
+    @Test(groups = {"Regression", "Positive"})
     public void productAddedToCart() {
         this.getInventoryPage().clickAddToCartButton("Sauce Labs Backpack");
         this.getInventoryPage().clickCart();

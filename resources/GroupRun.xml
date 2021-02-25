@@ -9,8 +9,8 @@
         <parameter name="implicitWait" value= "120"/>
         <groups>
             <run>
-                <include name = "Login"/>
-                <exclude name = "Positive"/>
+                <include name = "UI"/>
+                <exclude name = "Negative"/>
             </run>
         </groups>
         <classes>

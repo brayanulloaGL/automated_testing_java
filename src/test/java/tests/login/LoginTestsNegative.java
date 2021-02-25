@@ -22,7 +22,7 @@ public class LoginTestsNegative extends BaseTests {
     /**
      * This test case verifies the "LOGIN" with locked credentials
      */
-    @Test(groups = {"Login", "Negative"})
+    @Test(groups = {"Regression", "Negative"})
     public void lockedCredentials() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername(System.getenv("SAUCE_USERNAME_LOCKED"));
@@ -36,7 +36,7 @@ public class LoginTestsNegative extends BaseTests {
     /**
      * This test case verifies the "LOGIN" with invalid credentials
      */
-    @Test(groups = {"Login", "Negative"})
+    @Test(groups = {"Regression", "Negative"})
     public void invalidCredentials() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.setUsername("wrong_user");
