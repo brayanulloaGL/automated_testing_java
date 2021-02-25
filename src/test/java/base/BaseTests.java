@@ -1,6 +1,5 @@
 package base;
 
-import com.beust.jcommander.Parameter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,13 +18,15 @@ public class BaseTests {
     private String sauceUserName;
     private String saucePassword;
 
+    private String url;
+
     @BeforeClass(alwaysRun = true)
     @Parameters({"browser", "url", "implicitWait"})
     public void setUp(String browserName, String URL, int implicitWait) throws Exception {
 
         this.setSauceUserName(System.getenv("SAUCE_USERNAME"));
         this.setSaucePassword(System.getenv("SAUCE_PASSWORD"));
-
+        this.setUrl(URL);
 
         if (browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
@@ -44,14 +45,18 @@ public class BaseTests {
     }
 
     @BeforeMethod(alwaysRun = true)
-    @Parameters("url")
-    public void goHome(String URL) {
-        driver.get(URL);
+    public void goHome() {
         this.setInventoryPage(
                 new LoginPage(driver)
                         .setUsername(this.getSauceUserName())
                         .setPassword(this.getSaucePassword())
                         .clickLoginButton());
+    }
+
+    @AfterMethod(alwaysRun = true)
+    public void logout() {
+        this.getInventoryPage().clickMenuButton();
+        this.getInventoryPage().clickLogoutButton();
     }
 
     @AfterClass(alwaysRun = true)
@@ -81,5 +86,13 @@ public class BaseTests {
 
     public void setInventoryPage(InventoryPage inventoryPage) {
         this.inventoryPage = inventoryPage;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

@@ -32,16 +32,4 @@ public class InventoryTests extends BaseTests {
                 "No item has been added to the cart");
     }
 
-    /**
-     * This test case verifies the "LOGOUT" functionality
-     */
-    @Test(groups = { "Regression", "Smoke" })
-    public void logout(){
-        this.getInventoryPage().clickMenuButton();
-        this.getInventoryPage().clickLogoutButton();
-        LoginPage loginPage = new LoginPage(driver);
-        assertTrue(loginPage.getCredentialsSectionText()
-                        .contains("Accepted usernames are:"),
-                "The text of this section has been updated!");
-    }
 }

@@ -17,7 +17,8 @@
             <class name="tests.CartTests"/>
             <class name="tests.CheckoutTests"/>
             <class name="tests.InventoryTests"/>
-            <class name="tests.LoginTests"/>
+            <class name="tests.login.LoginTestsPositive"/>
+            <class name="tests.login.LoginTestsNegative"/>
             <class name="tests.ProductTests"/>
         </classes>
     </test>
