@@ -15,6 +15,7 @@ public class ProductPage extends BasePages {
 
     /**
      * This is the constructor of the Login Page
+     *
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
 
@@ -25,15 +26,16 @@ public class ProductPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    public void clickBackButton(){
+
+    public void clickBackButton() {
         driver.findElement(backButton).click();
     }
 
-    public void clickAddToCart(){
+    public void clickAddToCart() {
         driver.findElement(addToCartButton).click();
     }
 
-    public String getProductPriceText(){
+    public String getProductPriceText() {
         return driver.findElement(productPrice).getText();
     }
 }

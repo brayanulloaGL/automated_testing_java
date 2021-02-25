@@ -17,7 +17,6 @@ public class BaseTests {
 
     private String sauceUserName;
     private String saucePassword;
-
     private String url;
 
     @BeforeClass(alwaysRun = true)

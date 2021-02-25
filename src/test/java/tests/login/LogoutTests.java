@@ -10,14 +10,14 @@ import static org.testng.Assert.assertTrue;
 public class LogoutTests extends BaseTests {
 
     @AfterClass(alwaysRun = true)
-    public void logout (){
+    public void logout() {
     }
 
     /**
      * This test case verifies the "LOGOUT" functionality
      */
-    @Test(groups = { "Regression", "Smoke" })
-    public void logoutTest(){
+    @Test(groups = {"Regression", "Smoke"})
+    public void logoutTest() {
         this.getInventoryPage().clickMenuButton();
         this.getInventoryPage().clickLogoutButton();
         LoginPage loginPage = new LoginPage(driver);

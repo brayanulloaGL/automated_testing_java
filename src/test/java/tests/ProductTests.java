@@ -12,8 +12,8 @@ public class ProductTests extends BaseTests {
     /**
      * This test case verifies that the price of a product is correct on the Product page
      */
-    @Test(groups = { "UI", "Positive" })
-    public void correctProductPrice(){
+    @Test(groups = {"UI", "Positive"})
+    public void correctProductPrice() {
         this.getInventoryPage().clickProduct("Sauce Labs Bolt T-Shirt");
         ProductPage productPage = new ProductPage(driver);
         assertTrue(productPage.getProductPriceText()
@@ -24,8 +24,8 @@ public class ProductTests extends BaseTests {
     /**
      * This test case verifies that a product is added to the cart successfully (from the Product page)
      */
-    @Test(groups = { "Regression", "Positive" })
-    public void productAddedToCart(){
+    @Test(groups = {"Regression", "Positive"})
+    public void productAddedToCart() {
         this.getInventoryPage().clickProduct("Sauce Labs Bike Light");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
@@ -39,8 +39,8 @@ public class ProductTests extends BaseTests {
     /**
      * this test case verifies the "BACK" button functionality on the Product page
      */
-    @Test(groups = { "Regression", "Positive" })
-    public void backButton(){
+    @Test(groups = {"Regression", "Positive"})
+    public void backButton() {
         this.getInventoryPage().clickProduct("Sauce Labs Onesie");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickBackButton();

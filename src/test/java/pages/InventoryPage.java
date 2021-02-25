@@ -21,6 +21,7 @@ public class InventoryPage extends BasePages {
 
     /**
      * This is the constructor of the Inventory Page
+     *
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
 
@@ -31,36 +32,37 @@ public class InventoryPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    public void clickMenuButton(){
+
+    public void clickMenuButton() {
         driver.findElement(menuButton).click();
     }
 
-    public void clickCart(){
+    public void clickCart() {
         driver.findElement(cart).click();
     }
 
-    public void clickLogoutButton(){
+    public void clickLogoutButton() {
         driver.findElement(logout).click();
     }
 
-    private WebElement getProductContainerElement(String productName){
+    private WebElement getProductContainerElement(String productName) {
         String productContainerElement = String.format(productContainer, productName);
         return driver.findElement(By.xpath(productContainerElement));
     }
 
-    public void clickProduct(String productName){
+    public void clickProduct(String productName) {
         getProductContainerElement(productName).findElement(product).click();
     }
 
-    public void clickAddToCartButton(String productName){
+    public void clickAddToCartButton(String productName) {
         getProductContainerElement(productName).findElement(addToCartButton).click();
     }
 
-    public String getInventoryContainerText(){
+    public String getInventoryContainerText() {
         return driver.findElement(inventoryContainer).getText();
     }
 
-    public String getRandomProductText(){
+    public String getRandomProductText() {
         return driver.findElement(randomProduct).getText();
     }
 }

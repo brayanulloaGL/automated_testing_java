@@ -4,7 +4,6 @@ import base.BasePages;
 import base.BotStyle;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class CheckoutPage extends BasePages {
 
@@ -22,6 +21,7 @@ public class CheckoutPage extends BasePages {
 
     /**
      * This is the constructor of the Checkout Page
+     *
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
 
@@ -32,38 +32,38 @@ public class CheckoutPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    public CheckoutPage setFirstName(String firstName){
+    public CheckoutPage setFirstName(String firstName) {
         BotStyle.typeText(this.driver, firstNameField, firstName);
         return this;
     }
 
-    public CheckoutPage setLastName(String lastName){
+    public CheckoutPage setLastName(String lastName) {
         BotStyle.typeText(this.driver, lastNameField, lastName);
         return this;
     }
 
-    public CheckoutPage setPostalCode(String postalCode){
+    public CheckoutPage setPostalCode(String postalCode) {
         BotStyle.typeText(this.driver, postalCodeField, postalCode);
         return this;
     }
 
-    public void clickCancelButton(){
+    public void clickCancelButton() {
         driver.findElement(cancelButton).click();
     }
 
-    public void clickContinueButton(){
+    public void clickContinueButton() {
         driver.findElement(continueButton).click();
     }
 
-    public void clickFinishButton(){
+    public void clickFinishButton() {
         driver.findElement(finishButton).click();
     }
 
-    public String getErrorMessageText(){
+    public String getErrorMessageText() {
         return driver.findElement(errorMessage).getText();
     }
 
-    public String getOrderCompletedMessageText(){
+    public String getOrderCompletedMessageText() {
         return driver.findElement(completeOrder).getText();
     }
 }

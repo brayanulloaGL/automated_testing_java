@@ -16,9 +16,9 @@ public class CartPage extends BasePages {
     private By quantityProducts = By.cssSelector(".cart_quantity");
     private By subheader = By.cssSelector(".subheader");
 
-
     /**
      * This is the constructor of the Cart Page
+     *
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
 
@@ -30,28 +30,27 @@ public class CartPage extends BasePages {
      * Functions or methods are defined below
      */
 
-
-    public void clickCheckoutButton(){
+    public void clickCheckoutButton() {
         driver.findElement(checkoutButton).click();
     }
 
-    public String getContinueShoppingButtonText(){
+    public String getContinueShoppingButtonText() {
         return driver.findElement(continueShoppingButton).getText();
     }
 
-    public String getCheckoutButtonText(){
+    public String getCheckoutButtonText() {
         return driver.findElement(checkoutButton).getText();
     }
 
-    public String getCartBadgeText(){
+    public String getCartBadgeText() {
         return driver.findElement(cartBadge).getText();
     }
 
-    public String getSubheaderText(){
+    public String getSubheaderText() {
         return driver.findElement(subheader).getText();
     }
 
-    public String getQuantityProductsText(){
+    public String getQuantityProductsText() {
         return driver.findElement(quantityProducts).getText();
     }
 }

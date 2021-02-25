@@ -11,8 +11,8 @@ public class CheckoutTests extends BaseTests {
     /**
      * End to End Test | This test case verifies that an order is completed from scratch successfully
      */
-    @Test(groups = { "Regression", "Positive" })
-    public void completeOrder(){
+    @Test(groups = {"Regression", "Positive"})
+    public void completeOrder() {
         this.getInventoryPage().clickProduct("Sauce Labs Fleece Jacket");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
@@ -33,8 +33,8 @@ public class CheckoutTests extends BaseTests {
     /**
      * This test case verifies that an error message shows up when the checkout form is submitted without First Name
      */
-    @Test(groups = { "Regression", "Negative" })
-    public void submitCheckoutFormWithoutFirstName(){
+    @Test(groups = {"Regression", "Negative"})
+    public void submitCheckoutFormWithoutFirstName() {
         this.getInventoryPage().clickProduct("Sauce Labs Backpack");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
@@ -54,8 +54,8 @@ public class CheckoutTests extends BaseTests {
     /**
      * This test case verifies that an error message shows up when the checkout form is submitted without Last Name
      */
-    @Test(groups = { "Regression", "Negative" })
-    public void submitCheckoutFormWithoutLastName(){
+    @Test(groups = {"Regression", "Negative"})
+    public void submitCheckoutFormWithoutLastName() {
         this.getInventoryPage().clickProduct("Sauce Labs Bolt T-Shirt");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
@@ -75,8 +75,8 @@ public class CheckoutTests extends BaseTests {
     /**
      * This test case verifies that an error message shows up when the checkout form is submitted without Postal Code
      */
-    @Test(groups = { "Regression", "Negative" })
-    public void submitCheckoutFormWithoutPostalCode(){
+    @Test(groups = {"Regression", "Negative"})
+    public void submitCheckoutFormWithoutPostalCode() {
         this.getInventoryPage().clickProduct("Sauce Labs Bike Light");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
@@ -96,8 +96,8 @@ public class CheckoutTests extends BaseTests {
     /**
      * This test case verifies that the "CANCEL" button from the Checkout Page works as expected
      */
-    @Test(groups = { "Regression", "Positive" })
-    public void cancelButton(){
+    @Test(groups = {"Regression", "Positive"})
+    public void cancelButton() {
         this.getInventoryPage().clickProduct("Sauce Labs Onesie");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
@@ -107,7 +107,7 @@ public class CheckoutTests extends BaseTests {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.clickCancelButton();
         assertTrue(cartPage.getSubheaderText()
-                   .contains("Your Cart"),
+                        .contains("Your Cart"),
                 "Subheader text is incorrect!");
     }
 }

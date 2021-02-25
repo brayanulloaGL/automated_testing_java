@@ -4,7 +4,6 @@ import base.BasePages;
 import base.BotStyle;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePages {
 
@@ -19,6 +18,7 @@ public class LoginPage extends BasePages {
 
     /**
      * This is the constructor of the Login Page
+     *
      * @param driver this parameter will be used in the following constructor so that way all the methods from this class have access to it
      */
 
@@ -29,26 +29,26 @@ public class LoginPage extends BasePages {
     /**
      * Functions or methods are defined below
      */
-    public LoginPage setUsername(String username){
+    public LoginPage setUsername(String username) {
         BotStyle.typeText(this.driver, usernameField, username);
         return this;
     }
 
-    public LoginPage setPassword(String password){
+    public LoginPage setPassword(String password) {
         BotStyle.typeText(this.driver, passwordField, password);
         return this;
     }
 
-    public InventoryPage clickLoginButton(){
+    public InventoryPage clickLoginButton() {
         driver.findElement(loginButton).click();
         return new InventoryPage(this.driver);
     }
 
-    public String getErrorMessageText(){
+    public String getErrorMessageText() {
         return driver.findElement(errorMessage).getText();
     }
 
-    public String getCredentialsSectionText(){
+    public String getCredentialsSectionText() {
         return driver.findElement(credentialsSection).getText();
     }
 }

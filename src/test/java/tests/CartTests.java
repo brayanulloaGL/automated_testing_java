@@ -14,8 +14,8 @@ public class CartTests extends BaseTests {
     /**
      * This test case verifies that the "CONTINUE SHOPPING" button is available on the Cart page
      */
-    @Test(groups = { "UI", "Positive" })
-    public void continueShoppingButtonAvailable(){
+    @Test(groups = {"UI", "Positive"})
+    public void continueShoppingButtonAvailable() {
         this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         String text = cartPage.getContinueShoppingButtonText();
@@ -25,8 +25,8 @@ public class CartTests extends BaseTests {
     /**
      * This test case verifies that the "CHECKOUT" button is available on the Cart page
      */
-    @Test(groups = { "UI", "Positive" })
-    public void checkoutButtonAvailable(){
+    @Test(groups = {"UI", "Positive"})
+    public void checkoutButtonAvailable() {
         this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         String text = cartPage.getCheckoutButtonText();
@@ -36,8 +36,8 @@ public class CartTests extends BaseTests {
     /**
      * This test case verifies that the cart badge shows up as soon as any product is added to the cart
      */
-    @Test(groups = { "Regression", "Positive" })
-    public void cartBadge(){
+    @Test(groups = {"Regression", "Positive"})
+    public void cartBadge() {
         this.getInventoryPage().clickProduct("Sauce Labs Onesie");
         ProductPage productPage = new ProductPage(driver);
         productPage.clickAddToCart();
