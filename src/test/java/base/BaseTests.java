@@ -1,24 +1,14 @@
 package base;
 
-import com.sun.jna.platform.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.*;
-import org.testng.reporters.Files;
 import pages.InventoryPage;
 import pages.LoginPage;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import static com.sun.deploy.cache.Cache.copyFile;
-import static java.io.File.*;
 
 public class BaseTests {
 
@@ -62,24 +52,10 @@ public class BaseTests {
                         .clickLoginButton());
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void logout() {
-//        this.getInventoryPage().clickMenuButton();
-//        this.getInventoryPage().clickLogoutButton();
-//    }
-
     @AfterMethod(alwaysRun = true)
-    public void screenShot(ITestResult result){
-        if (ITestResult.FAILURE == result.getStatus()){
-            try{
-                TakesScreenshot screenshot = (TakesScreenshot)driver;
-                File src = screenshot.getScreenshotAs(OutputType.FILE);
-                copyFile(src, new File("resources/screenshots"+result.getName()+".png"));
-                System.out.println("Successfully captured a screenshot");
-            }catch (Exception e){
-                System.out.println("Exception while taking screenshot " + e.getMessage());
-            }
-        }
+    public void logout() {
+        this.getInventoryPage().clickMenuButton();
+        this.getInventoryPage().clickLogoutButton();
     }
 
     @AfterClass(alwaysRun = true)
