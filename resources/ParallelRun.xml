@@ -2,8 +2,8 @@
 <!--This one will run the first 4 classes in parallel, starting browsers at the same time-->
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite 1" parallel="classes" thread-count="4">
-    <test name="Regression 1">
+<suite name="Parallel Suite" parallel="classes" thread-count="4">
+    <test name="Parallel Regression ">
         <parameter name="browser" value="firefox"/>
         <parameter name="url" value="https://www.saucedemo.com/"/>
         <parameter name="implicitWait" value= "30"/>
