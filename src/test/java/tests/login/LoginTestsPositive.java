@@ -18,12 +18,9 @@ public class LoginTestsPositive extends BaseTests {
      */
     @Test(groups = {"Regression", "Positive"})
     public void validCredentials() {
-
+        logger.info("INITIALIZING TEST");
         assertTrue(this.getInventoryPage().getInventoryContainerText()
                         .contains("Products"),
                 "The text from the inventory container is incorrect!");
-        logger.info("We've just greeted the user!");
-
-
     }
 }

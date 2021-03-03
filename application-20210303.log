@@ -7,3 +7,9 @@
 2021-03-03 17:20:36.238 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
 2021-03-03 17:21:08.452 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
 2021-03-03 17:22:10.336 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:25:15.871 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:26:43.826 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:28:09.571 [TestNG-test=Parallel Regression -4] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:29:15.663 [TestNG-test=Parallel Regression -4] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:30:40.792 [TestNG-test=Parallel Regression -4] INFO  tests.login.LoginTestsPositive - INITIALIZING TEST
+2021-03-03 17:30:40.840 [TestNG-test=Parallel Regression -4] INFO  tests.login.LoginTestsPositive - TEST COMPLETED
