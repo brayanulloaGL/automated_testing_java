@@ -2,4 +2,4 @@
 target/
 automated_testing_java.iml
 resources/screenshots
-
+*.log

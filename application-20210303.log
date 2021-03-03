@@ -1,0 +1,9 @@
+2021-03-03 17:18:09.582 [main] DEBUG tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:18:09.584 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:18:09.584 [main] WARN  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:18:09.584 [main] ERROR tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:18:09.585 [main] FATAL tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:18:33.802 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:20:36.238 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:21:08.452 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
+2021-03-03 17:22:10.336 [main] INFO  tests.login.LoginTestsPositive - We've just greeted the user!
