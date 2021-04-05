@@ -10,13 +10,13 @@ public class InventoryPage extends BasePages {
     /**
      * Web Elements are defined below
      */
-    private By inventoryContainer = By.id("inventory_filter_container");
+    private By inventoryContainer = By.cssSelector(".header_secondary_container");
     private By randomProduct = By.id("item_4_title_link");
     private By logout = By.id("logout_sidebar_link");
     private By menuButton = By.cssSelector(".bm-burger-button");
     private By product = By.cssSelector(".inventory_item_name");
     private By addToCartButton = By.cssSelector(".btn_inventory");
-    private By cart = By.cssSelector(".fa-shopping-cart");
+    private By cart = By.cssSelector(".shopping_cart_link");
     private String productContainer = "//div[@class='inventory_item_name'][text()='%s']/ancestor::div[@class='inventory_item']";
 
     /**

@@ -107,7 +107,7 @@ public class CheckoutTests extends BaseTests {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.clickCancelButton();
         assertTrue(cartPage.getSubheaderText()
-                        .contains("Your Cart"),
+                        .contains("YOUR CART"),
                 "Subheader text is incorrect!");
     }
 }

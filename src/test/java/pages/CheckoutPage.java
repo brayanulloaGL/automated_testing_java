@@ -13,7 +13,7 @@ public class CheckoutPage extends BasePages {
     private By firstNameField = By.id("first-name");
     private By lastNameField = By.id("last-name");
     private By postalCodeField = By.id("postal-code");
-    private By cancelButton = By.cssSelector(".btn_secondary");
+    private By cancelButton = By.id("cancel");
     private By continueButton = By.cssSelector(".cart_button");
     private By errorMessage = By.cssSelector("[data-test='error']");
     private By finishButton = By.cssSelector(".cart_button");

@@ -20,7 +20,7 @@ public class LoginTestsPositive extends BaseTests {
     public void validCredentials() {
         logger.info("INITIALIZING TEST");
         assertTrue(this.getInventoryPage().getInventoryContainerText()
-                        .contains("Products"),
+                        .contains("PRODUCTS"),
                 "The text from the inventory container is incorrect!");
     }
 }

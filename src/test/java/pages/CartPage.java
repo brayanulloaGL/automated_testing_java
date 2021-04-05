@@ -10,11 +10,11 @@ public class CartPage extends BasePages {
      * Web Elements are defined below
      */
 
-    private By continueShoppingButton = By.linkText("CONTINUE SHOPPING");
-    private By checkoutButton = By.cssSelector(".checkout_button");
+    private By continueShoppingButton = By.id("continue-shopping");
+    private By checkoutButton = By.id("checkout");
     private By cartBadge = By.cssSelector(".shopping_cart_badge");
     private By quantityProducts = By.cssSelector(".cart_quantity");
-    private By subheader = By.cssSelector(".subheader");
+    private By subheader = By.cssSelector(".header_secondary_container");
 
     /**
      * This is the constructor of the Cart Page

@@ -10,7 +10,7 @@ public class ProductPage extends BasePages {
      * Web Elements are defined below
      */
     private By productPrice = By.cssSelector(".inventory_details_price");
-    private By backButton = By.cssSelector(".inventory_details_back_button");
+    private By backButton = By.id("back-to-products");
     private By addToCartButton = By.cssSelector(".btn_inventory");
 
     /**
