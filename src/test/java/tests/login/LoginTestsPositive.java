@@ -12,7 +12,6 @@ public class LoginTestsPositive extends BaseTests {
 
     Logger logger = LogManager.getLogger(LoginTestsPositive.class);
 
-
     /**
      * This test case verifies the "LOGIN" with valid credentials
      */
