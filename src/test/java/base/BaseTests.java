@@ -64,19 +64,19 @@ public class BaseTests {
         this.getInventoryPage().clickLogoutButton();
     }
 
-//    @AfterMethod()
-//    public void screenShot(ITestResult result){
-//        if (ITestResult.FAILURE == result.getStatus()){
-//            try{
-//                TakesScreenshot screenshot = (TakesScreenshot)driver;
-//                File src = screenshot.getScreenshotAs(OutputType.FILE);
-//                copyFile(src, new File("resources/screenshots/" + result.getName()+ ".png"));
-//                System.out.println("Successfully captured a screenshot");//logs
-//            }catch (Exception e){
-//                System.out.println("Exception while taking screenshot " + e.getMessage());//logs
-//            }
-//        }
-//    }
+    @AfterMethod()
+    public void screenShot(ITestResult result){
+        if (ITestResult.FAILURE == result.getStatus()){
+            try{
+                TakesScreenshot screenshot = (TakesScreenshot)driver;
+                File src = screenshot.getScreenshotAs(OutputType.FILE);
+                copyFile(src, new File("resources/screenshots/" + result.getName()+ ".png"));
+                System.out.println("Successfully captured a screenshot");//logs
+            }catch (Exception e){
+                System.out.println("Exception while taking screenshot " + e.getMessage());//logs
+            }
+        }
+    }
 
     @AfterClass(alwaysRun = true)
     public void tearDown() {
