@@ -26,7 +26,7 @@ public class CheckoutTests extends BaseTests {
         checkoutPage.clickContinueButton();
         checkoutPage.clickFinishButton();
         assertTrue(checkoutPage.getOrderCompletedMessageText()
-                        .contains("THANK YOU FOR YOUR ORDER"),
+                        .contains("Thank you for your order"),
                 "The text does not match!");
     }
 
@@ -107,7 +107,7 @@ public class CheckoutTests extends BaseTests {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.clickCancelButton();
         assertTrue(cartPage.getSubheaderText()
-                        .contains("YOUR CART"),
+                        .contains("Your Cart"),
                 "Subheader text is incorrect!");
     }
 }

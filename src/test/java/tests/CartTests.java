@@ -19,7 +19,7 @@ public class CartTests extends BaseTests {
         this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         String text = cartPage.getContinueShoppingButtonText();
-        assertEquals(text, "CONTINUE SHOPPING", "Button is not available!");
+        assertEquals(text, "Continue Shopping", "Button is not available!");
     }
 
     /**
@@ -30,7 +30,7 @@ public class CartTests extends BaseTests {
         this.getInventoryPage().clickCart();
         CartPage cartPage = new CartPage(driver);
         String text = cartPage.getCheckoutButtonText();
-        assertEquals(text, "CHECKOUT", "Checkout button is not available!");
+        assertEquals(text, "Checkout", "Checkout button is not available!");
     }
 
     /**

@@ -45,7 +45,7 @@ public class ProductTests extends BaseTests {
         ProductPage productPage = new ProductPage(driver);
         productPage.clickBackButton();
         assertTrue(this.getInventoryPage().getInventoryContainerText()
-                        .contains("PRODUCTS"),
+                        .contains("Products"),
                 "The text from the inventory container is incorrect!");
     }
 }
