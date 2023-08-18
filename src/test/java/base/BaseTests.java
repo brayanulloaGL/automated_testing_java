@@ -20,7 +20,6 @@ public class BaseTests {
 
     public WebDriver driver;
     private InventoryPage inventoryPage;
-
     private String sauceUserName;
     private String saucePassword;
     private String url;
